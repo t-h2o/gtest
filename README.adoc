@@ -1,0 +1,6 @@
+= Google test
+
+[blockquote, https://google.github.io/googletest/]
+____
+GoogleTest is Google’s C++ testing and mocking framework. This user’s guide has the following contents
+____
