@@ -11,6 +11,8 @@ CFLAGS	+=	-Werror
 CFLAGS	+=	-g
 CFLAGS	+=	-std=c++11
 
+GTEST	=	/usr/lib/libgtest.a
+
 OFLAGS	=	-fsanitize=address
 
 
@@ -40,7 +42,7 @@ all : $(NAME)
 
 $(NAME):	$(OBJS)
 	@printf "$(YELLOW)Creating executable..$(DEFAULT)\n"
-	@$(CC) $(OBJS) $(OFLAGS) $(CLIB) -o $(NAME)
+	@$(CC) $(OBJS) $(OFLAGS) $(CLIB) -o $(NAME) $(GTEST)
 	@printf "$(GREEN)---> $(NAME) is ready$(DEFAULT)\n"
 
 $(OBJD)/%.o : %.cpp | $(OBJD)
