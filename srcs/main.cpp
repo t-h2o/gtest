@@ -1,4 +1,5 @@
 #include	<iostream>
+#include	<gtest/gtest.h>
 
 static int	ft_sum(int a, int b)
 {
@@ -19,6 +20,7 @@ static void	test(int a, int b)
 		<< result
 		<< std::endl;
 
+	ASSERT_EQ(6, 7);
 }
 
 int	main(void)
