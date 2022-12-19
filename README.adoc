@@ -4,3 +4,16 @@
 ____
 GoogleTest is Google’s C++ testing and mocking framework. This user’s guide has the following contents
 ____
+
+== Insatall gtest library
+
+. Install the package `gtest`
+. Clone the GitHub repository `google/googletest.git`
+. Generate the Makefile with: `cmake CMakeLists.txt`
+. Generate the library with: `make`
+. Move the library into `/usr/lib/`
++
+[source, bash]
+----
+# cp lib/libgtest.a /usr/lib/
+----
